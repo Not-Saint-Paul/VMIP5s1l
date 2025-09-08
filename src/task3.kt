@@ -1,5 +1,5 @@
 fun main(args: Array<String>) {
     args.sort()
-    args.distinct()
-    args.forEach { println(it) }
+    val out = args.distinct()
+    out.forEach { println(it) }
 }
