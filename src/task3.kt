@@ -1,4 +1,5 @@
 fun main(args: Array<String>) {
-    args.sort().distinct()
+    args.sort()
+    args.distinct()
     args.forEach { println(it) }
 }
