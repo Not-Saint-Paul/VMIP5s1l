@@ -1,5 +1,5 @@
 fun main(args: Array<String>) {
-    val sortedArgs = args.sort()
+    val sortedArgs = args.sortedArray()
     val counts = sortedArgs.groupingBy { it }.eachCount()
     val sortedOut = out.sortedWith(compareByDescending<String> { counts[it] }.thenBy { it })
 
