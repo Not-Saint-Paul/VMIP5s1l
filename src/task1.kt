@@ -1,7 +1,5 @@
 fun main(args: Array<String>) {
-    val input = args[0]
-
-    val words = input.split(" ")
+    val words = args[0].split(" ")
     for (word in words) {
         println(word)
     }
