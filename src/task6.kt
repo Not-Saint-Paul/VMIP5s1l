@@ -1,5 +1,5 @@
 fun main() {
-    val input = readLine()
+    val input = readLine() ?: ""
     val args = input.split(" ")
 
     val sortedArgs = args.sortedArray()
