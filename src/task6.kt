@@ -1,5 +1,5 @@
 fun main() {
-    val args = readLine()
+    val args: Array<String> = readLine()
 
     val sortedArgs = args.sortedArray()
     val counts = sortedArgs.groupingBy { it }.eachCount()
