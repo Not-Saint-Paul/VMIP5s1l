@@ -2,9 +2,8 @@ fun main() {
     val input = readLine() ?: ""
     val args = input.split(" ")
 
-    val sortedArgs = args.sortedArray()
-    val counts = sortedArgs.groupingBy { it }.eachCount()
-    val out = sortedArgs.distinct()
+    val counts = args.groupingBy { it }.eachCount()
+    val out = args.distinct()
     val sortedOut = out.sortedWith(compareByDescending<String> { counts[it] }.thenBy { it })
 
     for (element in sortedOut) {
