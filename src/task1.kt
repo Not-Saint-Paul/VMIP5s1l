@@ -1,3 +1,5 @@
 fun main(args: Array<String>) {
-    println(args)
+    for (word in args) {
+        println(word)
+    }
 }
