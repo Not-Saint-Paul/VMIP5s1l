@@ -1,0 +1,1 @@
+fun main(args : Array<String>) { args.forEach { word -> println(word) } }//print(args.joinToString { it }.replace(", ", "\n"))
